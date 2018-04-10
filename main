@@ -1,1 +1,52 @@
+function orientNorth()
+if orientation == east then
+  turtle.turnLeft()
+end
+if orientation == south then
+ turtle.turnLeft()
+ turtle.turnLeft()
+end
+if orientation == west then
+  turtle.turnRight()
+end
+orientation = north
+end
 
+function orientEast()
+if orientation == north then
+  turtle.turnRight()
+end
+if orientation == south then
+  turtle.turnLeft()
+end
+if orientation == west then
+  turtle.turnLeft()
+  turtle.turnLeft()
+end
+orientation = east
+end
+
+function orientSouth()
+if orientation == north then
+  turtle.turnLeft()
+  turtle.turnLeft()
+end
+if orientation == east then
+  turtle.turnLeft()
+end
+if orientation == west then
+  turtle.turnRight()
+end
+orientation = south
+
+function orientWest()
+if orientation == north then
+  turtle.turnLeft()
+end
+if orientation == east then
+  turtle.turnLeft()
+  turtle.turnLeft()
+end
+if orientation == south then
+  turtle.turnRight()
+end
